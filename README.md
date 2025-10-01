@@ -1,5 +1,9 @@
 # CSharpExamples
 
-C# Example code
+## C# Example code
 
-there will be some code in this area
+## Answers
+
+Including
+
+* Iteration
