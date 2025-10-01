@@ -13,6 +13,9 @@ UsingAStringBuilder();
 CharacterCodes();
 Console.WriteLine();
 
+string hw = "hello world";
+string hw2 = hw.ToUpperInvariant();
+
 // Character encoding
 Console.WriteLine($"The default encoding is {Encoding.Default}\n");
 PrintCharsWithByteArray("Hello");
