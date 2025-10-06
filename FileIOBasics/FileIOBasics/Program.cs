@@ -9,7 +9,7 @@ string stations = File.ReadAllText("stations.txt");
 
 static void WritingToTextFiles()
 {
-    // the stringbuilder is more efficient that using the + to join strings together 
+    // as we know, the stringbuilder is more efficient that using the + to join strings together 
     StringBuilder sb = new StringBuilder();
     sb.AppendLine("line 1");
     int x = 2;
@@ -32,10 +32,16 @@ static void WritingToTextFiles()
 
     // an alternative place            
     docPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+
+    // NB - getting the Downloads folder, for example, is hard. 
+    // https://stackoverflow.com/questions/10667012/getting-downloads-folder-in-c
 }
 
 static void ReadingFromTextFiles()
 {
+    // NB - this is local to where you are running, so F5/Run will be different. 
+    // Best to copy to bin/Debug/.net{v.0} if you want to Debug 
+
     // option 1 - grab it all 
     string s = File.ReadAllText("textfile.txt");
     Console.WriteLine(s);
