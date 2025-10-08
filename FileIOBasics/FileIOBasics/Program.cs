@@ -46,11 +46,19 @@ static void ReadingFromTextFiles()
     string s = File.ReadAllText("textfile.txt");
     Console.WriteLine(s);
 
+    List<string> lines = File.ReadAllLines("textfile.txt").ToList();
+
+
+
     // option 2 - line by line - note the use of using here 
     using (StreamReader sr = new StreamReader("textfile.txt"))
     {
+
+
         // Read the stream to a string, and write the string to the console.
         String line = sr.ReadToEnd();
         Console.WriteLine(line);
+
     }
+    
 }
