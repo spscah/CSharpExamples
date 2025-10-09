@@ -16,6 +16,7 @@ Barbican, Hammersmith & City, Circle, Metropolitan
 Barking, Hammersmith & City, District
 Barkingside, Central
 Barons Court, Piccadilly, District
+Battersea Power Station, Northern
 Bayswater, Circle, District
 Beckton, Docklands Light Railway
 Beckton Park, Docklands Light Railway
@@ -180,6 +181,7 @@ Mornington Crescent, Northern
 Mudchute, Docklands Light Railway
 Neasden, Jubilee
 Newbury Park, Central
+Nine Elms, Northern
 North Acton, Central
 North Ealing, Piccadilly
 Northfields, Piccadilly
