@@ -1,4 +1,5 @@
 ﻿
+using System.Diagnostics;
 using System.Text;
 
 StringsAreSequencesOfCharacters("Super");
@@ -20,6 +21,10 @@ string hw2 = hw.ToUpperInvariant();
 Console.WriteLine($"The default encoding is {Encoding.Default}\n");
 PrintCharsWithByteArray("Hello");
 PrintCharsWithByteArray("Γεια σας");
+
+// https://www.moserware.com/2008/02/does-your-code-pass-turkey-test.html
+Debug.Assert(HasDangerousCharacters("St Paul's"));
+Debug.Assert(HasDangerousCharacters("zıplamak"));
 
 static void ImmutableStrings()
 {
@@ -133,4 +138,10 @@ static void PrintCharsWithByteArray(string val, int numberBase = 2)
         Console.WriteLine();
     }
     Console.WriteLine();
+}
+
+
+static bool HasDangerousCharacters(string s)
+{
+    return s.ToLower() == s.ToLowerInvariant();
 }
