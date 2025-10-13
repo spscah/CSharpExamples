@@ -7,6 +7,7 @@ WritingToTextFiles();
 
 string stations = File.ReadAllText("stations.txt");
 
+
 static void WritingToTextFiles()
 {
     // as we know, the stringbuilder is more efficient that using the + to join strings together 
