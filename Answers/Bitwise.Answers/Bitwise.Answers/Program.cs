@@ -56,18 +56,18 @@ int Remove(int places, int n) => n & ~Pattern(places);
 Debug.Assert(Remove(3, 15) == 8);
 Debug.Assert(Remove(1, 15) == 14);
 
-byte Set(byte b)
-{
-    return (byte)(b | 1);
+// Unseful LSB Manipulation functions 
+
+// in the short format 
+byte Set(byte b) => (byte)(b | 1);
+
+// or in the traditional style 
+byte UnSet(byte b) {
+    return (byte)(b & ~1);
 }
 
 Debug.Assert(Set(0xAE) == 0xAF);
 Debug.Assert(Set(0xAF) == 0xAF);
-
-byte UnSet(byte b)
-{
-    return (byte)(b & ~1);
-}
 
 Debug.Assert(UnSet(0xAE) == 0xAE);
 Debug.Assert(UnSet(0xAF) == 0xAE);
